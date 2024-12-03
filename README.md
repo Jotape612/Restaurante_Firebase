@@ -1,40 +1,50 @@
-# Restaurante-final
-Projeto final dedicado ao curso de ADS na materia de Desenvolvimetno de Sistemas (Web).
+Restaurante-Final
+Projeto final desenvolvido para o curso de ADS na matéria de Desenvolvimento de Sistemas (Web).
 
-**GEN - PIZZARIA GENÉRICA**
+GEN - PIZZARIA GENÉRICA
+A Gen é uma pizzaria que une a tradição das receitas italianas à inovação tecnológica, oferecendo uma experiência prática e eficiente tanto para clientes quanto para administradores. Mais que um restaurante, é um exemplo de como a tecnologia pode transformar o setor gastronômico.
 
-A Gen é uma pizzaria inovadora que busca combinar a tradição das receitas italianas com a modernidade de um sistema de gerenciamento digital. Criada para atender tanto os clientes quanto os administradores de forma eficiente e prática, a Gen é mais do que apenas um restaurante; ela é uma experiência gastronômica com tecnologia integrada.
+No cenário atual, pizzarias enfrentam desafios como organização de pedidos, gerenciamento de reservas e feedbacks de clientes. A Gen propõe um sistema digital moderno, intuitivo e escalável para solucionar essas dificuldades.
 
-No mundo dinâmico de hoje, as pizzarias enfrentam desafios como a organização de pedidos, gerenciamento de reservas e feedback de clientes. A Gen resolve essas questões com um sistema moderno, intuitivo e escalável que facilita o controle do dia a dia do negócio.
+PROPÓSITO
+A Gen foi idealizada para ser uma ferramenta acessível e inteligente, ajudando pizzarias de pequeno e médio porte a se destacarem no mercado enquanto oferecem uma experiência única para seus clientes.
 
-**PROPÓSITO**
-A Gen foi projetada para ser uma solução inteligente e acessível, proporcionando uma gestão completa e integrada que ajuda pizzarias de pequeno e médio porte a crescerem e entregarem experiências melhores aos seus clientes.
+WIREFRAMES
+Foram projetadas cinco telas principais:
 
-**WIREFRAMES**
-Cinco telas foram criadas: tela inicial (com header, home, menu, avaliação e footer), a página matriz do projeto onde o usuario será redirecionado para as outras; uma página carrinho, com relação no firestore; login e cadastro, para autenticação dos usuarios.
+Tela Inicial: Contém header, home, menu, avaliações e footer, com links para as demais páginas.
+Página de Carrinho: Integração com o Firestore para gerenciar os itens selecionados.
+Login e Cadastro: Utilizam o Firebase Authentication para autenticação segura.
+EXPLICAÇÃO DO CÓDIGO
+O site foi desenvolvido utilizando HTML, CSS e JavaScript. A integração com Node.js e Express.js permitiu a criação de rotas que conectam as wireframes de maneira eficiente. Após essa etapa, foi implementado o Firebase, com foco no:
 
-**EXPLICAÇÃO DE CÓDIGO**
-A partir da criação do site, utilizando HTML, CSS e o JS, foi necessario vincular ele ao node.js, consequentemente o express.js com intuito de criar rotas para facilitar o caminho das wireframes. Assim que esse processo foi completo, a instalação e vinculação do firebase foi necessaria.
+Reconhecimento de usuários logados por meio do Authentication.
+Gerenciamento de pratos e pedidos utilizando o Firestore.
+FUNCIONALIDADES TÉCNICAS (FIREBASE)
+Estrutura do Banco de Dados
 
-O Firebase foi utilizado, principalmente, para que o site pudesse fazer o reconhecimento dos usuarios logados, com o authentication, gerenciamento, exclusão e acrescimo de pratos, utilizando o firestore, e a partir disso o backend do projeto estará implementado.
+Coleções: Pratos, pedidos e usuários.
+Operações CRUD: Inserção, atualização e exclusão de dados.
+Firebase Authentication: Login com e-mail e senha.
+Rotas no Backend
 
-**FUNCIONALIDADES TECNICAS (FIREBASE)**
-A estrutura do BD foi: Coleções (pratos, pedidos, usuarios), CRUD (Inserção, atualização e exclusão de dados), Firebase Authentication, Login com email e senha. As Rotas no Backend: GET /pratos (Lista todos os pratos), POST /pedidos (Cria um novo pedido), PUT /pedidos/:id (atualizar o status) e DELETE /pratos/:id (remover).
+GET /pratos: Lista todos os pratos.
+POST /pedidos: Cria um novo pedido.
+PUT /pedidos/:id: Atualiza o status do pedido.
+DELETE /pratos/:id: Remove um prato do sistema.
+DESAFIOS ENFRENTADOS
+Integração do Firebase: Muitos tutoriais disponíveis estavam desatualizados, tornando o processo desafiador.
+Gerenciamento de Estoque: Apesar de demandar atenção, a implementação completa ficou pendente devido à incompatibilidade com a abordagem inicial.
+Interface Responsiva: Garantir uma UI consistente foi um processo contínuo ao longo do desenvolvimento.
+CONCLUSÃO
+Apesar dos desafios, o projeto proporcionou uma grande evolução técnica e prática. A experiência com o Firebase foi enriquecedora e será essencial em projetos futuros. Ainda há oportunidades de melhoria, especialmente no uso do Node.js e do Express.js, que exigem mais estudos e prática para aproveitamento pleno.
 
-**DESAFIOS ENFRENTADOS**
-Para mim, os principais desafios enfrentados foi, inicialmente, vincular o firebase ao projeto. Por terem videos um pouco mais antigos, coisa de 2 a 4 anos, pegar a base do projeto em tutorial e aplicar ao meu próprio foi um verdadeiro desafio. Gerenciamento de estoque, com as rotas Backend, foi algo que demandou muito atenção mas, infelizmente, não foi algo que consegui entregar ao código como gostaria, dependendo de uma base do projeto menos compativel com a ideia que foi requisitada. Por fim, a interface responsiva que muitas vezes quebrada com o decorrer do projeto.
+Planos futuros para o projeto incluem:
 
-**CONCLUSÃO**
-Apesar de ser dificil, e não ter aplicado 100% do que foi solicitado, o projeto trouxe uma grande experiência e inovação, podendo ser replicado em futuros projetos e, principalmente, do próprio curso. A experiência de mexer com o firebase foi interessante e, sem sombra de dúvidas, será utilizado futuramente. Por outro lado, ainda me falta um pouco de conhecimento em como, e porquê, utilizar o node.js/express.js - embora tenha entendido sua ideia, como usa-lo em projetos futuros será uma nova etapa de recolhimento de informações e estudos. 
-
-Futuramente pretendo retornar ao projeto, finalizando o backend para os pratos, adicionando pagamentos online e melhorar o sistema de notificação para usuarios/administradores.
-
-**REFERENCIAS**
-Para entender a base do firebase, mas sem sucesso em aplicar no projeto:
-https://www.youtube.com/watch?v=oFp7twsVEiE
-
-Introdução e implementação do firebase no projeto:
-https://www.youtube.com/watch?v=NZzekYgLYdg
-
-Documentação oficial do firebase
-https://firebase.google.com/docs/web/setup?hl=pt-br
+Finalização completa do backend para os pratos.
+Integração de pagamentos online.
+Notificações otimizadas para usuários e administradores.
+REFERÊNCIAS
+Firebase - Autenticação de Usuários (YouTube)
+Introdução e Implementação do Firebase (YouTube)
+Documentação Oficial do Firebase
