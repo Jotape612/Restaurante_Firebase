@@ -72,4 +72,3 @@ Planos futuros para o projeto incluem:
 
 --- 
 
-Essa versão apresenta as informações de forma estruturada, clara e com destaque para os aspectos mais relevantes do projeto.
